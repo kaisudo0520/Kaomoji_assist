@@ -24,3 +24,8 @@ Thumbs.db
 .env
 .env.local
 .env.production
+
+# 編譯好的發布版本（透過 GitHub Releases 發布）
+右鍵顏文字助手/
+Kaomoji_assist/
+*.zip
