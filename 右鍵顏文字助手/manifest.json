@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "右鍵顏文字助手",
+  "version": "1.0.0",
+  "description": "在任何網頁按右鍵即可插入可愛的顏文字",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "contextMenus",
+    "downloads"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["assets/index.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
