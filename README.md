@@ -1,174 +1,177 @@
-# 右鍵顏文字助手 - Chrome 擴充功能
+[English](README.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md)
 
-在任何網頁按右鍵即可插入可愛的顏文字（Kaomoji）！
+---
 
-## 功能特色
+# Kaomoji Assistant - Chrome Extension
 
-✨ **雙重開啟方式** - Shift+右鍵直接開啟 / 右鍵選單中選擇「顏文字助手」
-📂 **分類管理** - 內建 5 大分類（喜怒哀樂其他）+ 我的最愛 + 最近使用
-⭐ **我的最愛** - 標記常用的顏文字，快速存取
-🕐 **最近使用** - 自動記錄最近使用的 10 個顏文字
-🎨 **自訂管理** - 新增、編輯、刪除分類和顏文字
-🔁 **連續插入** - 點選顏文字後選單不關閉，方便連續使用
-📍 **記憶位置** - 自動記住上次選單位置，下次開啟直接顯示
-🎯 **可拖動介面** - 自由拖動選單到喜歡的位置
-🌏 **多語言** - 自動偵測語言（繁體中文/英文）
-💾 **資料同步** - 使用 Chrome Storage 儲存設定
+Insert cute kaomoji (emoticons) on any webpage with a right-click!
 
-## 安裝步驟
+## Features
 
-### 1. 建置專案（如果還沒建置）
+✨ **Dual Trigger** - Shift+Right-click to open directly / Select "Kaomoji Assistant" from context menu
+📂 **Category Management** - 5 built-in categories (Joy, Anger, Sadness, Fun, Other) + Favorites + Recent
+⭐ **Favorites** - Mark frequently used kaomoji for quick access
+🕐 **Recent** - Auto-records the last 10 used kaomoji
+🎨 **Customization** - Add, edit, and delete categories and kaomoji
+🔁 **Continuous Insert** - Menu stays open after clicking kaomoji for consecutive insertions
+📍 **Position Memory** - Remembers last menu position for next opening
+🎯 **Draggable Interface** - Freely drag the menu to your preferred position
+🌏 **Multi-language** - Auto-detects language (Traditional Chinese/English)
+💾 **Data Sync** - Settings stored in Chrome Storage
+
+## Installation
+
+### 1. Build the Project (if not already built)
 
 ```bash
 npm install
 npm run build
 ```
 
-### 2. 載入到 Chrome
+### 2. Load into Chrome
 
-1. 打開 Chrome 瀏覽器
-2. 在網址列輸入 `chrome://extensions/` 並按 Enter
-3. 開啟右上角的「開發人員模式」(Developer mode)
-4. 點擊「載入未封裝項目」(Load unpacked)
-5. 選擇專案中的 `dist` 資料夾
-6. 完成！擴充功能已安裝成功 🎉
+1. Open Chrome browser
+2. Navigate to `chrome://extensions/`
+3. Enable "Developer mode" in the top right corner
+4. Click "Load unpacked"
+5. Select the `dist` folder from the project
+6. Done! Extension installed successfully 🎉
 
-## 使用方法
+## Usage
 
-### 基本使用
+### Basic Usage
 
-**方式一：Shift + 右鍵（快速開啟）**
-1. 在任何網頁的**輸入框**或**文字區域**按 `Shift + 右鍵`
-2. 選單會直接彈出在上次的位置（第一次使用會在輸入框旁）
-3. 點擊想要的顏文字，自動插入到游標位置
-4. 選單保持開啟，可繼續選擇其他顏文字
-5. 點擊右上角 ✕ 按鈕關閉選單
+**Method 1: Shift + Right-click (Quick Open)**
+1. Press `Shift + Right-click` on any **input field** or **text area** on any webpage
+2. The menu will appear at the last saved position (first use will show near the input field)
+3. Click a kaomoji to insert it at the cursor position
+4. Menu stays open for additional selections
+5. Click the ✕ button in the top right to close
 
-**方式二：右鍵選單**
-1. 在任何網頁的**輸入框**或**文字區域**按右鍵
-2. 在瀏覽器右鍵選單中選擇「顏文字助手」
-3. 選單會彈出在上次記憶的位置
+**Method 2: Context Menu**
+1. Right-click on any **input field** or **text area** on any webpage
+2. Select "Kaomoji Assistant" from the browser context menu
+3. Menu will appear at the last remembered position
 
-**拖動選單**
-- 按住選單頂部的灰色標題列即可拖動
-- 下次開啟會記住新位置
+**Dragging the Menu**
+- Hold and drag the gray title bar at the top of the menu
+- Position is saved for next opening
 
-### 管理顏文字
+### Managing Kaomoji
 
-1. 右鍵開啟選單
-2. 點擊右上角的「⚙️ 設定」標籤
-3. 可以：
-   - 新增自訂分類
-   - 重新命名分類（系統預設分類除外）
-   - 刪除分類
-4. 在各分類中，可以：
-   - 新增顏文字（底部輸入框）
-   - 標記我的最愛（⭐ 圖示）
-   - 調整順序（↑↓ 箭頭）
-   - 刪除項目（🗑️ 圖示）
+1. Right-click to open the menu
+2. Click the "⚙️ Settings" tab in the top right
+3. You can:
+   - Add custom categories
+   - Rename categories (except system defaults)
+   - Delete categories
+4. Within each category, you can:
+   - Add kaomoji (input field at bottom)
+   - Mark as favorite (⭐ icon)
+   - Adjust order (↑↓ arrows)
+   - Delete items (🗑️ icon)
 
-## 預設顏文字
+## Default Kaomoji
 
-### 😊 喜
+### 😊 Joy
 (•‿•) | (^‿^) | (≧▽≦) | (*^▽^*) | (o^∀^o)
 
-### 😠 怒
+### 😠 Anger
 (╬☉д⊙)⊰ | (ノಠ益ಠ)ノ | (╬ Ò ‸ Ó) | ヽ(｀Д´)ﾉ | (＃`Д´)
 
-### 😢 哀
+### 😢 Sadness
 ( ；∀；) | (´;︵;`) | (╥_╥) | (T_T) | (;´༎ຶД༎ຶ`)
 
-### 😄 樂
+### 😄 Fun
 (~‾▿‾)~ | ♪～(´ε` ) | └( ＾ω＾ )」 | (*￣0￣)θ～♪ | ᕕ( ᐛ )ᕗ
 
-### 🤔 其他
+### 🤔 Other
 (・_・) | (O_O) | (._.) | (;´Д`) | (･ω･)b
 
-## 開發指令
+## Development Commands
 
 ```bash
-# 安裝依賴
+# Install dependencies
 npm install
 
-# 開發模式（目前不支援熱重載）
+# Development mode (hot reload not supported)
 npm run dev
 
-# 建置生產版本
+# Build for production
 npm run build
 
-# 預覽建置結果
+# Preview build
 npm run preview
 ```
 
-## 技術架構
+## Tech Stack
 
-- **框架**: React 18 + Vite 5
-- **樣式**: Tailwind CSS 3
-- **圖示**: Lucide React
-- **擴充功能版本**: Manifest V3
-- **儲存**: Chrome Storage API
+- **Framework**: React 18 + Vite 5
+- **Styling**: Tailwind CSS 3
+- **Icons**: Lucide React
+- **Extension Version**: Manifest V3
+- **Storage**: Chrome Storage API
 
-## 專案結構
+## Project Structure
 
 ```
-251121/
-├── dist/                 # 建置輸出（載入到 Chrome 的目錄）
+├── dist/                 # Build output (load this into Chrome)
 │   ├── manifest.json
-│   ├── background.js    # 右鍵選單處理
+│   ├── background.js    # Context menu handler
 │   └── assets/
 │       ├── index.js
 │       └── index.css
 ├── src/
-│   ├── main.jsx         # 入口檔案
-│   ├── App.jsx          # 主要元件（UI + 邏輯）
-│   ├── background.js    # 背景腳本（右鍵選單註冊）
-│   └── index.css        # 全域樣式（含滾動條優化）
-├── manifest.json        # Chrome 擴充功能設定
-├── vite.config.js       # Vite 設定（多入口建置）
-├── tailwind.config.js   # Tailwind 設定
-└── package.json         # 專案設定
+│   ├── main.jsx         # Entry point
+│   ├── App.jsx          # Main component (UI + logic)
+│   ├── background.js    # Background script (context menu registration)
+│   └── index.css        # Global styles (including scrollbar optimization)
+├── manifest.json        # Chrome extension config
+├── vite.config.js       # Vite config (multi-entry build)
+├── tailwind.config.js   # Tailwind config
+└── package.json         # Project config
 ```
 
-## 常見問題
+## FAQ
 
-### Q: 顏文字助手沒有出現？
-A: 請確認：
-- 擴充功能已正確安裝並啟用
-- 您在**可輸入的區域**（input、textarea、contentEditable）操作
-- 使用 `Shift + 右鍵` 直接開啟，或在右鍵選單中選擇「顏文字助手」
+### Q: Kaomoji Assistant not appearing?
+A: Please check:
+- Extension is properly installed and enabled
+- You are clicking on an **editable area** (input, textarea, contentEditable)
+- Use `Shift + Right-click` to open directly, or select "Kaomoji Assistant" from context menu
 
-### Q: 選單位置不對或看不到？
-A: 您可以：
-- 第一次使用時選單會自動計算位置顯示在輸入框旁
-- 拖動選單標題列移動到喜歡的位置
-- 下次開啟會記住您設定的位置
-- 如需重置位置，可以在 `chrome://extensions/` 中移除並重新安裝
+### Q: Menu position is wrong or not visible?
+A: You can:
+- First use will auto-calculate position near the input field
+- Drag the title bar to move to preferred position
+- Position is saved for next opening
+- To reset position, remove and reinstall from `chrome://extensions/`
 
-### Q: 如何關閉選單？
+### Q: How to close the menu?
 A:
-- 點擊選單右上角的 ✕ 按鈕
-- 或點擊選單外的任何區域
+- Click the ✕ button in the top right corner
+- Or click anywhere outside the menu
 
-### Q: 如何更新擴充功能？
+### Q: How to update the extension?
 A:
-1. 修改代碼後執行 `npm run build`
-2. 到 `chrome://extensions/` 頁面
-3. 點擊擴充功能卡片上的「重新載入」圖示 🔄
+1. After code changes, run `npm run build`
+2. Go to `chrome://extensions/`
+3. Click the refresh icon 🔄 on the extension card
 
-### Q: 資料會保留嗎？
-A: 是的！所有自訂的分類、顏文字、選單位置都儲存在 Chrome Storage 中，不會因為重新載入擴充功能而遺失。
+### Q: Will my data be preserved?
+A: Yes! All custom categories, kaomoji, and menu positions are stored in Chrome Storage and won't be lost when reloading the extension.
 
-### Q: 為什麼點選顏文字後選單不會關閉？
-A: 這是新版本的特色功能！讓您可以連續插入多個不同的顏文字，不需要重複開啟選單。使用完畢後點擊右上角的 ✕ 按鈕即可關閉。
+### Q: Why doesn't the menu close after clicking a kaomoji?
+A: This is a feature! It allows you to insert multiple kaomoji consecutively without reopening the menu. Click the ✕ button in the top right corner when done.
 
-## 授權
+## License
 
-本專案為開源專案，歡迎自由使用和修改。
+This project is open source. Feel free to use and modify.
 
-## 貢獻
+## Contributing
 
-歡迎提交 Issue 或 Pull Request！
+Issues and Pull Requests are welcome!
 
 ---
 
-**享受使用顏文字吧！** (｡◕‿◕｡)
+**Enjoy using kaomoji!** (｡◕‿◕｡)
